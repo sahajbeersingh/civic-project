@@ -19,17 +19,17 @@ This project demonstrates a **decoupled architecture**, **CI/CD deployment**, an
 ## Project Showcase
 
 ### User Complaint Form  
-![User submission form](./images/User-dashboard1)
-![User Table](./images/user-dashboard2)
-![User feedback form](./images/user-dashboard3)
+![User submission form](./images/User-dashboard1.png)
+![User Table](./images/user-dashboard2.png)
+![User feedback form](./images/user-dashboard3.png)
 
 ### Admin Dashboard
-![Admin Map](./images/admin2)
-![Admin Table](./images/admin3)
-![Admin feedback viewing](./images/admin4)
+![Admin Map](./images/admin2.png)
+![Admin Table](./images/admin3.png)
+![Admin feedback viewing](./images/admin4.png)
 
 ### Admin Dashboard 
-![Admin dashboard access](./images/admin1)
+![Admin dashboard access](./images/admin1.png)
 
 ---
 
