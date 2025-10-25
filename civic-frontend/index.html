@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Civic Complaint Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 min-h-screen font-sans">
+
+    <div id="app" class="max-w-4xl mx-auto p-4 sm:p-6 lg:p-8">
+        </div>
+
+    <div id="feedbackModal" class="modal fixed inset-0 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-xl shadow-2xl p-6 w-full max-w-lg mx-4">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800">Feedback for Complaint <span id="modalComplaintId"></span></h2>
+            
+            <div id="feedbackList" class="max-h-60 overflow-y-auto mb-4 p-3 border rounded-lg bg-gray-50">
+                <p class="text-gray-500">Loading feedback...</p>
+            </div>
+
+            <div id="addFeedbackContainer">
+                <h3 class="text-lg font-semibold mb-2 text-gray-800">Add New Feedback</h3>
+                <form id="addFeedbackForm" class="space-y-4">
+                    <input type="hidden" id="feedbackComplaintId">
+                    <div>
+                        <textarea id="feedbackText" rows="3" class="w-full px-4 py-2 border rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="Enter feedback text" required></textarea>
+                    </div>
+                    <div>
+                        <input type="number" id="feedbackRating" min="1" max="5" step="0.5" class="w-full px-4 py-2 border rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="Rating (1.0 to 5.0)" required>
+                    </div>
+                    <div class="flex justify-end space-x-3">
+                        <button type="submit" class="px-4 py-2 text-sm font-medium text-white bg-green-600 rounded-lg hover:bg-green-700 transition duration-150">
+                            Submit Feedback
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="mt-4 flex justify-end">
+                <button type="button" onclick="closeModal('feedbackModal')" class="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-200 rounded-lg hover:bg-gray-300 transition duration-150">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

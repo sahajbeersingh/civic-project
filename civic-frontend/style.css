@@ -1,0 +1,41 @@
+/* Custom styles for Leaflet map height and UI*/
+#mapUser, #mapAdmin {
+    height: 300px;
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+.complaint-card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.complaint-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+.status-pending { background-color: #fef3c7; color: #d97706; }
+.status-acknowleged { background-color: #d1fae5; color: #059669; }
+.status-resolved { background-color: #dbeafe; color: #2563eb; }
+.status-badge { padding: 4px 8px; border-radius: 9999px; font-weight: 600; font-size: 0.75rem; }
+ 
+/* PRIORITY STYLES: 3=HIGH (Red), 2=MEDIUM (Orange), 1=LOW (Blue) */
+.priority-high { background-color: #fee2e2; color: #dc2626; } /* Red */
+.priority-medium { background-color: #fef9c3; color: #ca8a04; } /* Orange */
+.priority-low { background-color: #e0f2fe; color: #3b82f6; } /* Blue */
+
+.modal { background-color: rgba(0, 0, 0, 0.5); }
+/* Loader styles */
+.loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    animation: spin 2s linear infinite;
+    display: inline-block;
+    margin-right: 8px;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
