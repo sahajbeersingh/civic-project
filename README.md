@@ -12,6 +12,7 @@ This project demonstrates a **decoupled architecture**, **CI/CD deployment**, an
 - **Frontend (Vercel):** [https://civic-project-seven.vercel.app](https://civic-project-seven.vercel.app)
 - **Backend API (Render):** [https://civic-backend-api.onrender.com](https://civic-backend-api.onrender.com)  
 - **ML Service (Render):** [https://civic-ml-service.onrender.com/predict](https://civic-ml-service.onrender.com/predict)
+- **Admin Secret key:** [municipal123]
 - use Backend API with API calls mentioned below
 
 ---
@@ -28,7 +29,7 @@ This project demonstrates a **decoupled architecture**, **CI/CD deployment**, an
 ![Admin Table](./images/admin3.png)
 ![Admin feedback viewing](./images/admin4.png)
 
-### Admin Dashboard 
+### Admin Dashboard access
 ![Admin dashboard access](./images/admin1.png)
 
 ---
