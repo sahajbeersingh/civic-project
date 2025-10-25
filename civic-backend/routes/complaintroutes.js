@@ -5,6 +5,7 @@ const validatecomplaint = require('../middleware/validatecomplaint');
 
 router.get("/",complaintcontroller.getcomplaints);
 router.get("/:id",complaintcontroller.getcomplaintbyid);
+router.get("/pending",complaintcontroller.getpending);
 router.post("/",validatecomplaint,complaintcontroller.createcomplaint);
 router.patch("/:id",complaintcontroller.updatecomplaint);
 module.exports = router;
